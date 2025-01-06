@@ -51,14 +51,14 @@ kubectl get nodes
 7. Test Cluster Resilience
 Delete a node in the EC2 console and watch Kubernetes automatically recreate the node to maintain the desired cluster state.
 
-##Costs and Cleanup
+## Costs and Cleanup
 * EKS is not Free Tier eligible. Be aware that there is a cost of $0.10 USD/hour for each running EKS cluster.
 * Make sure to delete all resources when done to minimize costs.
 Run the following command to delete your cluster:
 
 eksctl delete cluster --name eks-cluster
 
-##Conclusion
+## Conclusion
 In this project, you learned how to set up and manage an EKS Kubernetes cluster on AWS. You used eksctl for quick setup, managed IAM permissions, tracked resources with CloudFormation, and observed Kubernetes’ self-healing capabilities.
 
 
