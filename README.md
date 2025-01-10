@@ -25,7 +25,6 @@ sudo mv /tmp/eksctl /usr/local/bin
 3. Create a Kubernetes Cluster Using eksctl
 Run the following command to create a Kubernetes cluster:
 
-Copy code
 eksctl create cluster \
 --name eks-cluster \
 --nodegroup-name nextwork-nodegroup \
